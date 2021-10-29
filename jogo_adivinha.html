@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+
+<script> 
+
+function pulaLinha(){
+	document.write("<br>");
+}
+function mostra(frase){
+	document.write(frase);
+	pulaLinha();
+}
+
+var numeroPensado = Math.round(Math.random()*100); //"Math.random" gera um número aleatório, ´porém gera um valor 0,014, logo precisa multiplica por 10 para ter decimal a frente; "Math.round arredonda"
+var chute = parseInt(prompt("Dig seu chute"));
+
+if(chute==numeroPensado){
+	document.write("Vc acertou!");
+}else{
+	document.write("Vc errou! Valor pensado foi "+numeroPensado);
+	}
+
+
+</script>
